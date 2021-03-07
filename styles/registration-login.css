@@ -22,10 +22,6 @@ main {
     border-radius: 30px;
 }
 
-.login {
-    display: none;
-}
-
 .registration {
     display: flex;
     height: calc(100vh - 230px);
@@ -52,6 +48,7 @@ main {
     font-family: sans-serif;
     color: white;
     font-size: 15px;
+    margin-top: 15px;
     opacity: 0.8;
 }
 
@@ -62,7 +59,7 @@ main {
     justify-content: center;
 }
 
-.registration-form-title {
+.registration-form-title, .login-form-title{
     color: #767676;
     font-size: 30px;
     font-family: sans-serif;
@@ -76,7 +73,7 @@ main {
     margin-top: 35px;
 }
 
-.registration-button {
+.registration-button, .login-button{
     border: none;
     background-color: #267dff;
     border-radius: 10px;
@@ -89,6 +86,39 @@ main {
     outline: none;
 }
 
+.login {
+    display: flex;
+    height: calc(100vh - 230px);
+}
+
+.login-form {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form input {
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    outline: none;
+    margin-top: 35px;
+}
+
+.login-banner {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #267dff;
+    padding: 0px 120px 0px 80px;
+}
+
+.registration {
+    display: none;
+}
 
 
 
