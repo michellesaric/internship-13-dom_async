@@ -1,5 +1,5 @@
-@import "assets/css/variables.css";
-@import "assets/css/fonts.css";
+@import "./assets/css/variables.css";
+@import "./assets/css/fonts.css";
 
 * {
     box-sizing: border-box;
@@ -28,7 +28,6 @@ main {
 
 .registration {
     display: flex;
-    flex-direction: row;
     height: calc(100vh - 230px);
 }
 
@@ -58,7 +57,36 @@ main {
 
 .registration-form {
     display: flex;
+    flex-basis: 50%;
+    align-items: center;
     justify-content: center;
+}
+
+.registration-form-title {
+    color: #767676;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.registration-form input {
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    outline: none;
+    margin-top: 35px;
+}
+
+.registration-button {
+    border: none;
+    background-color: #267dff;
+    border-radius: 10px;
+    margin-top: 35px;
+    font-size: 13px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px 55px;
+    outline: none;
 }
 
 
