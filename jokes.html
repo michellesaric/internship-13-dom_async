@@ -13,6 +13,24 @@
         <button class="sign-out-button">SIGN OUT</button>
     </nav>
     <header>
+        <div class="modal">
+            <div class="modal-content">
+              <p class = "modal-text">Please rate the joke from 1 to 10</p>
+              <select name="grades" id="grades" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <button class="submit-modal">SUBMIT</button>
+            </div>
+          </div>
         <div class = "jokes-list">
         </div>
         <div class = "jokes-rating">
@@ -24,8 +42,10 @@
             </div>
         </div>
     </header>
+    <script src = "constant/localStorageBasis.js"></script>
     <script src = "scripts/fetch.js"></script>
     <script src = "scripts/joke.js"></script>
     <script src = "scripts/logout.js"></script>
+    <script src = "scripts/close-modal.js"></script>
 </body>
 </html>
