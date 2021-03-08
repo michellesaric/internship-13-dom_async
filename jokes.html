@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/jokes.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <nav>
+        <h5 class = "jokes-logo">JOKES</h5>
+        <button class="sign-out-button">SIGN OUT</button>
+    </nav>
+    <header>
+        <div class = "jokes-list">
+        </div>
+        <div class = "jokes-rating">
+            <button class = "click-for-a-joke">CLICK FOR A RANDOM JOKE</button>
+            <p class = "joke-text"></p>
+            <div class="joke-buttons">
+                <button class="store-joke">STORE JOKE</button>
+                <button class="skip-joke">SKIP JOKE</button>
+            </div>
+        </div>
+    </header>
+    <script src = "scripts/fetch.js"></script>
+    <script src = "scripts/joke.js"></script>
+    <script src = "scripts/logout.js"></script>
 </body>
 </html>
