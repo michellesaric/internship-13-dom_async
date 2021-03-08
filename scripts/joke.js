@@ -31,6 +31,7 @@ function addToTheList() {
 
     let newDiv = document.createElement("DIV");
     newDiv.className = "jokes-list-member"
+    newDiv.id = newId;
     newDiv.style.cssText = 'display: flex;flex-direction: column;justify-content: center;border: 1px solid white;border-radius: 10px;'
     let addedJoke = document.createElement("P");
     addedJoke.innerHTML = joke;
