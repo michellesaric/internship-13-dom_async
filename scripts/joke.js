@@ -25,16 +25,28 @@ function addToTheList() {
     let newId = JSON.parse(localStorage.getItem("id")) + 1;
     const joke = gottenJoke.textContent;
 
-    console.log(typeof(newId));
-    console.log(newId);
-    console.log(option);
-    console.log(joke);
-
     localStorage.setItem("id", JSON.stringify(newId));
     localStorage.setItem("grade", JSON.stringify(option));
     localStorage.setItem("joke", joke);
 
-    console.log(localStorage);
+    let newDiv = document.createElement("DIV");
+    newDiv.className = "jokes-list-member"
+    newDiv.style.cssText = 'display: flex;flex-direction: column;justify-content: center;border: 1px solid white;border-radius: 10px;'
+    let addedJoke = document.createElement("P");
+    addedJoke.innerHTML = joke;
+    newDiv.appendChild(addedJoke);
+    let addedGrade = document.createElement("P");
+    addedGrade.innerHTML = option;
+    newDiv.appendChild(addedGrade);
+    let deleteButton = document.createElement("BUTTON");
+    deleteButton.innerHTML = "DELETE";
+    deleteButton.className = "delete-button";
+    newDiv.appendChild(deleteButton);
+
+    document.querySelector(".jokes-list").appendChild(newDiv);
+
+    modal.style.display = "none";
+
 }
 
 jokeButton.addEventListener('click', displayJoke);
